@@ -1,6 +1,23 @@
 {
   "admin": [],
   "user": [],
-  "owner": [],
-  "hotelDetails":[]
+  "owner": [
+    {
+      "UserName": "sd",
+      "Email": "ss",
+      "mobile": "cv",
+      "Password": "fgg",
+      "Gender": "female",
+      "id": 1
+    },
+    {
+      "UserName": "sd",
+      "Email": "ss",
+      "mobile": "cv",
+      "Password": "fgg",
+      "Gender": "female",
+      "id": 2
+    }
+  ],
+  "hotelDetails": []
 }

@@ -1,5 +1,10 @@
-<button (click)="journey('admin')">Admin</button>
-<!-- 'admin' is a code related hard coded value not a path -->
-<button (click)="journey('owner')">Owner</button>
-<button (click)="journey('user')">User</button>
-<button *ngIf="showLogOut">Log Out</button>
+<div class="container">
+
+   <div class="btn-container">
+    <button class="btns" mat-raised-button color="accent" (click)="journey('admin')">Admin</button>
+    <!-- 'admin' is a code related hard coded value not a path -->
+    <button class="btns" mat-raised-button color="accent" (click)="journey('owner')">Owner</button>
+    <button class="btns" mat-raised-button color="accent" (click)="journey('user')">User</button>
+    <button class="btns" mat-raised-button color="accent" *ngIf="showLogOut">Log Out</button>
+</div>
+</div>

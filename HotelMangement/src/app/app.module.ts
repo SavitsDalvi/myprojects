@@ -9,6 +9,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {  CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { SharedModule } from './common/shared/shared.module';
 
 @NgModule({
  
@@ -23,7 +24,7 @@ import {  CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    
+    SharedModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
   ],

@@ -7,6 +7,8 @@ import { OwnersignupComponent } from './ownersignup/ownersignup.component';
 import { OwnerLoginComponent } from './owner-login/owner-login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from '../common/shared/shared.module';
+import { OwnersucessComponent } from './ownersucess/ownersucess.component';
+import { NewhotelregistrationComponent } from './newhotelregistration/newhotelregistration.component';
 
 
 @NgModule({
@@ -14,6 +16,8 @@ import { SharedModule } from '../common/shared/shared.module';
     OwnerhomeComponent,
     OwnersignupComponent,
     OwnerLoginComponent,
+    OwnersucessComponent,
+    NewhotelregistrationComponent,
   ],
   imports: [
     CommonModule,
