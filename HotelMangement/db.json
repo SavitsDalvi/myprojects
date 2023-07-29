@@ -17,6 +17,14 @@
       "Password": "fgg",
       "Gender": "female",
       "id": 2
+    },
+    {
+      "UserName": "X",
+      "Email": "xz",
+      "mobile": "xZX",
+      "Password": "xzX",
+      "Gender": "female",
+      "id": 3
     }
   ],
   "hotelDetails": []

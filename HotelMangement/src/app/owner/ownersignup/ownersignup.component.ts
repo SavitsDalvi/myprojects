@@ -49,7 +49,7 @@ export class OwnersignupComponent {
       })
 
       //if(this.postResponse){
-        this.router.navigateByUrl('owner/ownerSuccess');
+        this.router.navigateByUrl('owner/ownersucess');
         //}
 
 
