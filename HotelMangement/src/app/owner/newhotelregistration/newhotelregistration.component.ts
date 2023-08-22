@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./newhotelregistration.component.scss']
 })
 export class NewhotelregistrationComponent {
-  HotelRegistrationForm!:FormGroup;
+  hotelRagistrationForm!:FormGroup;
   constructor( private router:Router){}
   back(){
     this.router.navigateByUrl('/owner/ownerHome')

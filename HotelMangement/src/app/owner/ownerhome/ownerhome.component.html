@@ -8,6 +8,7 @@
 </div>-->
 <button mat-raised-button color="primary"  class="btns" (click)="back()">Back</button>
 <form class="example-form" [formGroup]="loginForm">
+<!-- <form class="example-form" [formGroup]="loginForm"> -->
 
     <mat-form-field class="example-full-width">
         <mat-label>username</mat-label>
@@ -21,7 +22,25 @@
 
     <div>
         <button mat-raised-button color="primary" (click)="login()">Login</button>
-        <a routerLink="/owner/ownersignup" mat-raised-button color="accent">New Owner?</a>
+        <!-- <button mat-raised-button color="primary" *ngIf="forgotPassword" (click)="forgetPassword()">Forgot Password</button> -->
+        <a routerLink="/owner/ownersignup" mat-raised-button color="accent">New Owner?</a><br>
+        <!-- <a (click)="forgetPassword()">forgotten Password?</a>  -->
+        
     </div>
 </form>
+
+ <!-- <form class="example-form" [formGroup]="forgetPasswordForm" *ngIf="showForgetPasswordForm"> --> -->
+    <!-- <mat-form-field class="example-full-width"> -->
+        <!-- <mat-label>New Password</mat-label>
+        <input matInput formControlName="newPassword">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+        <mat-label>Conform Password</mat-label>
+        <input matInput type="password" formControlName="confirmPassword">
+    </mat-form-field>
+    <div>
+        <button mat-raised-button color="primary" (click)="Submit"></button>
+    </div>
+</form>  -->
 

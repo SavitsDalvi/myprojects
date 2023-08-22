@@ -1,55 +1,47 @@
+<form [formGroup]="hotelRagistrationForm" class="div-form">
+   <mat-form-field class="form-field">
 
-<mat-card>
-<mat-card-header>
-    <h2>New Hotel Registration</h2>
-</mat-card-header>
-    <mat-card-content>
-        <form [formGroup]="HotelRegistrationForm">
-            <mat-form-field class="example-full-width">
-                <mat-label>ownerName</mat-label>
-                <input matInput formControlName="name">
-            </mat-form-field>
-            <mat-form-field class="example-full-width">
-                <mat-label>owenerMobNo</mat-label>
-                <input matInput formControlName="mobile">
-            </mat-form-field>
-            <mat-form-field class="example-full-width">
-                <mat-label>HotelName</mat-label>
-                <input matInput formControlName="hotelAddress">
-            </mat-form-field>
-            <mat-form-field class="example-full-width">
-                <mat-label>Hotel Contact</mat-label>
-                <input matInput formControlName="hotelContact">
-            </mat-form-field>
-            <mat-form-field class="exaple-full-width">
-            <mat-label>Hotel Menu</mat-label>
-            <input matInput formControlName="hotelMenu">
-        </mat-form-field>
-            <mat-form-field class="example-full-width">
-                <mat-label>Room Available</mat-label>
-                <input matInput formControlName="roomAvailable">
-            </mat-form-field>
-            <mat-form-field class="example-full-width">
-            <mat-label>owenrCheck</mat-label>
-            <input matInput formControlName="owenrCheck">
-        </mat-form-field>
-            <mat-form-field class="example-full-width">
-                <mat-label>userPass</mat-label>
-                <input matInput formControlName="userPass">
-            </mat-form-field><br>
-        
-        <button mat-raised-button color="primary" (click)="submitDetails()">Submit Details </button> 
-        <button mat-raised-button color="primary" (click)="back()">back </button>
-    </form>
-    </mat-card-content>
-</mat-card>
+    <mat-label>Owner Name</mat-label>
+    <input matInput formControlName="ownerName">
+</mat-form-field>
+    <mat-form-field class="form-field">
 
-<!-- /*ownerName"
-       owenerMobNo
-      "hotelName"
-      "hotelAddress"
-      "hotelContact"
-      "hotelMenu"
-      "roomAvailable"
-      "owenrCheck":
-      "userPass":  -->
+        <mat-label>Owner Contact</mat-label>
+        <input type="tel" matInput placeholder="555-555-1234"formControlName="ownerContact" maxlength="10">
+        <!-- <mat-icon matSuffix>mode_edit</mat-icon> -->
+
+    </mat-form-field><br>
+
+    <mat-form-field class="form-field">
+        <mat-label>Hotel Name</mat-label>
+        <input matInput formControlName="hotelName">
+    </mat-form-field>
+    <mat-form-field class="form-field">
+        <mat-label>Hotel Address</mat-label>
+        <input matInput formControlName="hotelAddress">
+    </mat-form-field><br>
+    <mat-form-field class="form-field">
+        <mat-label>Hotel Contact</mat-label>
+        <input type="tel" matInput matInput placeholder="555-555-1234" formControlName="hotelContact">
+        <!-- s<mat-icon matSuffix>mode_edit</mat-icon> -->
+    </mat-form-field>
+    <mat-form-field class="form-field">
+        <mat-label>Hotel Menu</mat-label>
+        <input matInput formControlName="hotelMenu">
+    </mat-form-field><br>
+    <mat-form-field class="form-field">
+        <mat-label>Rooms Available</mat-label>
+        <input matInput formControlName="roomsAvailable">
+    </mat-form-field>
+    <mat-form-field class="form-field">
+        <mat-label>Owner Check</mat-label>
+        <input matInput formControlName="ownerCheck">
+    </mat-form-field><br>
+    <mat-form-field class="form-field">
+        <mat-label> Password</mat-label>
+        <input matInput formControlName="password">
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="submitDetails()">Submit Details </button>
+            <button mat-raised-button color="primary" (click)="back()">back </button>
+
+</form>

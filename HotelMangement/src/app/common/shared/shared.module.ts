@@ -6,7 +6,10 @@ import { MatInputModule} from '@angular/material/input';
 import { MatRadioModule} from '@angular/material/radio';
 import { MatButtonModule} from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule} from '@angular/common/http';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [],
@@ -16,10 +19,12 @@ import { HttpClientModule} from '@angular/common/http';
     MatCardModule,
     MatButtonModule,
     MatInputModule,
-    MatRadioModule,
     ReactiveFormsModule,
     HttpClientModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatToolbarModule,
+    MatIconModule,
+    ToastrModule.forRoot(),
   ],
   exports : [
     MatCardModule,
@@ -29,6 +34,9 @@ import { HttpClientModule} from '@angular/common/http';
     MatRadioModule,
     ReactiveFormsModule,
     HttpClientModule,
+    MatToolbarModule,
+    MatIconModule,
+    ToastrModule
   ]
 })
 export class SharedModule { }

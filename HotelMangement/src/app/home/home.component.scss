@@ -1,9 +1,10 @@
 .container{
-    background-image: url('/assets/images/hotel2.jpg');
+    //background-image: url('/assets/images/hotel2.jpg');
     height: 100%; 
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .btn-container
 {
     position: relative;
@@ -12,4 +13,8 @@
 .btns{
     padding: 6px,6px;
     margin: 7px;
+}
+::ng-deep body{
+    background-image: url('/assets/images/hotel2.jpg');
+    background-size:100% 100%;
 }

@@ -8,13 +8,17 @@ export class CommonApiCallService {
   url='http://localhost:3000/';
   constructor(public http: HttpClient){}
     
-  postApiCall(endpoint: string, formData:any) { 
-      let url =this.url+endpoint;
+  postApiCall(endPoint: string, formData:any) { 
+      let url =this.url+endPoint;
       return this.http.post(url, formData);
 
   }
-  //getApiCall(endPoint:string){
-    //let url = this.url+endPoint;
-    //return this.http.get(url);
-  //}
+  getApiCall(endPoint:string){
+    let url = this.url  +endPoint;
+    return this.http.get(url);
+  }
+  patchApiCall(endPoint:any,data:any,id:number) {
+    let url = this.url + endPoint + '/' + id;
+    return this.http.patch(url,data) 
+  }
 }

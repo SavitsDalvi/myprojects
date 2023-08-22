@@ -3,28 +3,20 @@
   "user": [],
   "owner": [
     {
-      "UserName": "sd",
-      "Email": "ss",
-      "mobile": "cv",
-      "Password": "fgg",
+      "UserName": "savita",
+      "Email": "sav.dalvi88@gmail.com",
+      "mobile": "7218725138",
+      "Password": "savita123",
       "Gender": "female",
-      "id": 1
+      "id": 4
     },
     {
-      "UserName": "sd",
-      "Email": "ss",
-      "mobile": "cv",
-      "Password": "fgg",
+      "UserName": "sonali",
+      "Email": "sonali16@gmail.com",
+      "mobile": "9588152334",
+      "Password": "sonali123",
       "Gender": "female",
-      "id": 2
-    },
-    {
-      "UserName": "X",
-      "Email": "xz",
-      "mobile": "xZX",
-      "Password": "xzX",
-      "Gender": "female",
-      "id": 3
+      "id": 5
     }
   ],
   "hotelDetails": []

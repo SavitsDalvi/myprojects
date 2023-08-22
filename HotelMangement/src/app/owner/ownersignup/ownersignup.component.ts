@@ -29,7 +29,7 @@ export class OwnersignupComponent {
     FormDetails()
     {
       this.signUpForm = this.fb.group({
-        name:['',[]],
+        name:['',[Validators.required,Validators.minLength(5),Validators.pattern('[a-zA-Z ]*')]],
         email:['',[]],
         mobile:['',[]],
         password:['',[]],
